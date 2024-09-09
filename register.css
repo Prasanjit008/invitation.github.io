@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #c919ba, #21b9af); /* Gradient background */
+            color: #3e13a1;
+            overflow: hidden;
+}
+
+.register-box {
+    padding: 20px;
+    background: linear-gradient(135deg, #c919ba, #21b9af);
+    border-radius: 70px;
+    box-shadow: 0 7px 15px rgba(0, 240, 60, 0.2);
+    text-align: center;
+}
+
+#submitButton {
+    
+    padding: 10px;
+    background: linear-gradient(135deg, #c919ba, #21b9af);
+    color: white;
+    box-shadow: 0 7px 15px rgba(241, 247, 242, 0);
+    border-radius:20px ;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#submitButton:hover {
+    background: #d24;
+}

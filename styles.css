@@ -1,0 +1,189 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Envelope Animation */
+.envelope-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+ /* Floating colorful bubbles background animation */
+ .bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bubbles span {
+  position: absolute;
+  bottom: -150px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: bubbleFloat 10s linear infinite;
+  opacity: 0.8;
+}
+
+/* Define different animations for bubbles */
+@keyframes bubbleFloat {
+  0% {
+      transform: translateY(100vh) scale(0.5);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-150vh) scale(1.5);
+      opacity: 0;
+  }
+}
+
+/* Bubble variations */
+.bubbles span:nth-child(odd) {
+  background-color: rgba(255, 0, 255, 0.4); /* Pink bubbles */
+}
+
+.bubbles span:nth-child(even) {
+  background-color: rgba(0, 255, 255, 0.4); /* Cyan bubbles */
+}
+
+.bubbles span:nth-child(3n) {
+  background-color: rgba(0, 255, 0, 0.4); /* Green bubbles */
+  width: 60px;
+  height: 60px;
+}
+
+.bubbles span:nth-child(5n) {
+  background-color: rgba(255, 255, 0, 0.4); /* Yellow bubbles */
+  width: 20px;
+  height: 20px;
+}
+
+.envelope {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background : #537c9e;
+  border: 2px solid #537c9e;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: transform 1s ease;
+}
+
+.envelope-flap {
+  position: absolute;
+  top: -2.0px;
+  left: 0;
+  width: 299px;
+  height: 120px;
+  background: #1a2f41; /* Vibrant yellowish-orange flap */
+  clip-path: polygon(100% 0,0 0,50% 100%); /* Triangle shape for envelope flap */
+  transform-origin: top;
+  transform: rotateX(0deg);
+  transition: transform 1s ease;
+}
+
+
+.envelope-body {
+  width: 100%;
+  height: 100%;
+}
+
+button#openEnvelope {
+  position: absolute;
+  top: 200px;
+  background: #f84;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button#openEnvelope:hover {
+  background: #c83;
+}
+
+/* Invitation Card */
+.invitation-card {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #1998ca, #28bbd4);
+
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Gradient background */
+  color: #ffffff;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  z-index: 100;
+}
+
+.invitation-card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.invitation-card p {
+  margin-bottom: 50px;
+}
+
+.countdown {
+  margin-top: 15px;
+}
+
+button#registerButton {
+  background: #4b0883;
+  color: white;
+  box-shadow: 0 4px 15px rgba(23, 226, 125, 0.3);
+  padding: 10px 20px;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button#registerButton:hover {
+  background: #634ad3;
+}
+
+/* Fireworks Canvas */
+#fireworksCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: black;
+}
+
+/* Register Page */
+#registerPage {
+  display: none;
+  height: 100vh;
+  background: #f8f9fa;
+  position: relative;
+}
+
+@keyframes paperBlast {
+  0% { transform: translateY(-50px) rotate(0deg); }
+  100% { transform: translateY(500px) rotate(360deg); }
+}
