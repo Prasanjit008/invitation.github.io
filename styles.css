@@ -105,8 +105,8 @@
 button#openEnvelope {
   position: absolute;
   top: 200px;
-  background: #f84;
-  color: white;
+  box-shadow: 0 0 5px cyan,0 0 25px cyan;
+  color: rgb(134, 25, 244);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -115,7 +115,9 @@ button#openEnvelope {
 }
 
 button#openEnvelope:hover {
-  background: #c83;
+   box-shadow:0 0 5px Cyan,
+  0 0 25px cyn, 0 o 50px cyan,
+  0 0 25px cyn, 0 o 200px cyan;
 }
 
 /* Invitation Card */
@@ -128,7 +130,7 @@ button#openEnvelope:hover {
   background: linear-gradient(135deg, #1998ca, #28bbd4);
 
   border-radius: 10px;
-  background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Gradient background */
+  background: linear-gradient(135deg, #3EFFD4,#00B4FF,#3262FF); /* Gradient background */
   color: #ffffff;
   overflow: hidden;
   padding: 20px;
