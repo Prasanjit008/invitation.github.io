@@ -16,6 +16,7 @@ for (let i = 0; i < bubbleCount; i++) {
     bubblesContainer.appendChild(bubble);
 }
 // Countdown timer
+// Countdown timer
 const countdown = document.getElementById('countdown');
 const partyDate = new Date('2024-09-29T08:00:00').getTime();
 
@@ -23,6 +24,7 @@ setInterval(function() {
   const now = new Date().getTime();
   const timeLeft = partyDate - now;
 
+  // Calculate days, hours, minutes, and seconds
   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
   const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
