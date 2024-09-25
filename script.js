@@ -17,7 +17,7 @@ for (let i = 0; i < bubbleCount; i++) {
 }
 // Countdown timer
 const countdown = document.getElementById('countdown');
-const partyDate = new Date('2024-09-30T19:00:00').getTime();
+const partyDate = new Date('2024-09-29T08:00:00').getTime();
 
 setInterval(function() {
   const now = new Date().getTime();
