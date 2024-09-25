@@ -3,14 +3,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #c919ba, #21b9af); /* Gradient background */
+    background: linear-gradient(135deg, #879AF2, #D3208B,#FDA000); /* Gradient background */
             color: #3e13a1;
             overflow: hidden;
 }
 
 .register-box {
     padding: 20px;
-    background: linear-gradient(135deg, #c919ba, #21b9af);
+    background: linear-gradient(135deg, #F79D00,#64F38C);
     border-radius: 70px;
     box-shadow: 0 7px 15px rgba(0, 240, 60, 0.2);
     text-align: center;
@@ -19,7 +19,7 @@ body {
 #submitButton {
     
     padding: 10px;
-    background: linear-gradient(135deg, #c919ba, #21b9af);
+    background: linear-gradient(135deg, #333333, #76ccB1);
     color: white;
     box-shadow: 0 7px 15px rgba(241, 247, 242, 0);
     border-radius:20px ;
@@ -28,5 +28,5 @@ body {
 }
 
 #submitButton:hover {
-    background: #d24;
+    background: rgb(43, 213, 205);
 }
